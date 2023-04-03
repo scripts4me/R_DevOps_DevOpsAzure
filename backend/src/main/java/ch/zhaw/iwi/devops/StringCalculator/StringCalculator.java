@@ -1,6 +1,5 @@
 package ch.zhaw.iwi.devops.StringCalculator;
 
-
 // StringCalculator.java aus https://github.com/scripts4me/R_DevOps_TDD
 
 public class StringCalculator {
