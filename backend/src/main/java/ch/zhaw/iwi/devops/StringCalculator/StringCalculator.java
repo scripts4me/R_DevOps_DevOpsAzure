@@ -5,7 +5,7 @@ package ch.zhaw.iwi.devops.StringCalculator;
 public class StringCalculator {
 
     public int add(String numbers) {
-        if (numbers == "") {
+        if (numbers.equals("")) {
             return 0;
         } else {
 
