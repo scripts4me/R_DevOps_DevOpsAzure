@@ -4,64 +4,64 @@ package ch.zhaw.iwi.devops.StringCalculator;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class StringCalculatorTests {
+class StringCalculatorTests {
 
     @Test
-    public void ZeroInteger() {
+    void ZeroInteger() {
         StringCalculator calculator = new StringCalculator();
         assertEquals(0, calculator.add(""));
     }
 
     @Test
-    public void OneInteger1() {
+    void OneInteger1() {
         StringCalculator calculator = new StringCalculator();
         assertEquals(5, calculator.add("5"));
     }
 
     @Test
-    public void OneInteger2() {
+    void OneInteger2() {
         StringCalculator calculator = new StringCalculator();
         assertEquals(7, calculator.add("7"));
     }
 
     @Test
-    public void TwoInteger() {
+    void TwoInteger() {
         StringCalculator calculator = new StringCalculator();
         assertEquals(15, calculator.add("8,7"));
     }
 
     @Test
-    public void TwoIntegerWithSpace() {
+    void TwoIntegerWithSpace() {
         StringCalculator calculator = new StringCalculator();
         assertEquals(15, calculator.add("8, 7"));
     }
 
     @Test
-    public void GreatherThanMax() {
+    void GreatherThanMax() {
         StringCalculator calculator = new StringCalculator();
         assertEquals(2, calculator.add("1001, 2"));
     }
 
     @Test
-    public void SmallerThanMin() {
+    void SmallerThanMin() {
         StringCalculator calculator = new StringCalculator();
         assertEquals(2, calculator.add("-1002, 2"));
     }
 
     @Test
-    public void DoubleComma() {
+    void DoubleComma() {
         StringCalculator calculator = new StringCalculator();
         assertEquals(5, calculator.add("2,,3"));
     }
 
     @Test
-    public void OnlyAllowedDelimeter() {
+    void OnlyAllowedDelimeter() {
         StringCalculator calculator = new StringCalculator();
         assertThrows(IllegalArgumentException.class, () -> calculator.add("2/3"));
     }
 
     @Test
-    public void MaxAmountOfNumbers() {
+    void MaxAmountOfNumbers() {
         StringCalculator calculator = new StringCalculator();
         assertThrows(IllegalArgumentException.class, () -> calculator.add("2,3,6, 7, 8 ,9"));
     }

@@ -10,17 +10,17 @@ public class StringCalculator {
         } else {
 
             String numbersWithoutSpace = numbers.replaceAll(" ", "");
-            Boolean OnlyAllowedDelimeter = numbersWithoutSpace.matches("^[0-9,-]*$");
+            Boolean onlyAllowedDelimeter = numbersWithoutSpace.matches("^[0-9,-]*$");
 
-            if (!OnlyAllowedDelimeter) {
+            if (!onlyAllowedDelimeter) {
                 throw new IllegalArgumentException(String.format("Nur Kommas sind als Trennzeichen erlaubt."));
             }
-            String CleanedNumbersWithoutSpace = numbersWithoutSpace.replaceAll(",,", ",");
+            String cleanedNumbersWithoutSpace = numbersWithoutSpace.replaceAll(",,", ",");
 
-            String[] submittedNumbers = CleanedNumbersWithoutSpace.split(",");
+            String[] submittedNumbers = cleanedNumbersWithoutSpace.split(",");
 
-            Integer MaxAmountOfNumbers = submittedNumbers.length;
-            if (MaxAmountOfNumbers > 5) {
+            Integer maxAmountOfNumbers = submittedNumbers.length;
+            if (maxAmountOfNumbers > 5) {
                 throw new IllegalArgumentException(String.format("Es sind nur maximal 5 Nummern erlaubt."));
             }
 
