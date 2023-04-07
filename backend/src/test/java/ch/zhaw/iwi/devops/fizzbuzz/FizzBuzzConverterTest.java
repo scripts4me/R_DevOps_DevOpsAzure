@@ -54,4 +54,24 @@ public class FizzBuzzConverterTest {
         Assertions.assertEquals("FizzBuzz", fizzBuzz.convert(63));
     }
 
+    @Test
+    void FizzBuzzUltraMegaGiga() {
+
+        FizzBuzzConverter fizzBuzz = new FizzBuzzConverter();
+
+        Assertions.assertEquals("FizzBuzzUltraMegaGiga", fizzBuzz.convert(2100));
+    }
+
+    @Test
+    void FizzBuzzUltraMega() {
+
+        FizzBuzzConverter fizzBuzz = new FizzBuzzConverter();
+
+        Assertions.assertEquals("FizzBuzzUltraMega", fizzBuzz.convert(105));
+    }
+
+
+
+    
+
 }

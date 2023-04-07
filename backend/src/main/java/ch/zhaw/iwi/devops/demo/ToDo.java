@@ -5,11 +5,6 @@ public class ToDo {
     private int id;
     private String title;
     private String description;
-
-/*
-    public ToDo() {
-    }
-*/
     
     public ToDo(int id, String title, String description) {
         this.id = id;
