@@ -9,7 +9,7 @@ public class ToDoControllerTest {
     @Test
     public void testCreate() {
         ToDoController controller = new ToDoController();
-        var todo = new ToDo(1, "t", "d");
+        var todo = new ToDo(1, "t", "d", "Schwarz");
         controller.createTodo(1, todo);
         assertEquals(1, controller.count());
         assertEquals(1, controller.todo().size());

@@ -8,10 +8,11 @@ public class ToDoTest {
 
     @Test
     public void testToDo() {
-        var toDo1 = new ToDo(1, "title", "description");
+        var toDo1 = new ToDo(1, "title", "description", "Weiss");
         assertEquals("title", toDo1.getTitle());
         assertEquals("description", toDo1.getDescription());
         assertEquals(1, toDo1.getId());
+        assertEquals("Weiss", toDo1.getColor());
     }
     
 }

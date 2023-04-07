@@ -5,11 +5,13 @@ public class ToDo {
     private int id;
     private String title;
     private String description;
+    private String color;
     
-    public ToDo(int id, String title, String description) {
+    public ToDo(int id, String title, String description, String color) {
         this.id = id;
         this.title = title;
         this.description = description;
+        this.color = color;
     }
 
     public int getId() {
@@ -26,6 +28,10 @@ public class ToDo {
 
     public String getDescription() {
         return description;
+    }
+    
+    public String getColor() {
+        return color;
     }
     
 }
