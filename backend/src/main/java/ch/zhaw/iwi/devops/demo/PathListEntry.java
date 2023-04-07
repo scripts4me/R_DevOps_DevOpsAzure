@@ -8,7 +8,7 @@ public class PathListEntry<KEYTYPE> {
 	private Key key;
 	private String name;
 	private String color;
-	private String icon;
+	//private String icon;
 	private String url;
 	private String page;
 	private String type;
@@ -45,7 +45,7 @@ public class PathListEntry<KEYTYPE> {
 	public String getColor() {
 		return color;
 	}
-
+/*
 	public String getIcon() {
 		return icon;
 	}
@@ -53,6 +53,7 @@ public class PathListEntry<KEYTYPE> {
 	public void setIcon(String icon) {
 		this.icon = icon;
 	}
+*/
 
 	public List<String> getDetails() {
 		return details;
