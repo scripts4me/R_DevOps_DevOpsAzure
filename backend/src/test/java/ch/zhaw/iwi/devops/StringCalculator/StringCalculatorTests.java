@@ -12,6 +12,29 @@ class StringCalculatorTests {
         assertEquals(0, calculator.add(""));
     }
 
+    @Test
+    void OneInteger1() {
+        StringCalculator calculator = new StringCalculator();
+        assertEquals(5, calculator.add("5"));
+    }
+
+    @Test
+    void OneInteger2() {
+        StringCalculator calculator = new StringCalculator();
+        assertEquals(7, calculator.add("7"));
+    }
+
+    @Test
+    void TwoInteger() {
+        StringCalculator calculator = new StringCalculator();
+        assertEquals(15, calculator.add("8,7"));
+    }
+
+    @Test
+    void TwoIntegerWithSpace() {
+        StringCalculator calculator = new StringCalculator();
+        assertEquals(15, calculator.add("8, 7"));
+    }
 
     @Test
     void GreatherThanMax() {
