@@ -137,6 +137,16 @@ export class GuiModel {
                             "page": "modulePage",
                             "width": 2,
                         },
+
+                        {
+                            "type": "button",
+                            "name": { default: "Intranet" },
+                            "icon": "fa-file-alt",
+                            "color": "wet-asphalt",
+                            "page": "modulePage",
+                            "width": 2,
+                        },
+
                         
                     ]
                 },
