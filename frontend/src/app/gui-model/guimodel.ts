@@ -147,6 +147,15 @@ export class GuiModel {
                             "width": 2,
                         },
 
+                        {
+                            "type": "button",
+                            "name": { default: "DevOps" },
+                            "icon": "fa-file-alt",
+                            "color": "wet-asphalt",
+                            "page": "modulePage",
+                            "width": 2,
+                        },
+
                         
                     ]
                 },
