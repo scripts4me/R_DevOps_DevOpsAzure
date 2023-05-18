@@ -26,7 +26,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: peteral2/devopsdemo:${{github.sha}}
+          tags: alex4devops/devopsdemo:${{github.sha}}
 
   deploy:
     permissions:
