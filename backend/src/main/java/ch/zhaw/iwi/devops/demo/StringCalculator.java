@@ -33,9 +33,8 @@ public class StringCalculator {
         int result = 0;
         for (String token : inputSplittedByDelimiter) {
             result += addSingleToken(token);
-            result += 5;
         }
-
+        result += 5;
         return result;
     }
 
