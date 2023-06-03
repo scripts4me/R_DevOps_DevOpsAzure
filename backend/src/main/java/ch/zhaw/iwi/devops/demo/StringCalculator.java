@@ -33,9 +33,9 @@ public class StringCalculator {
         int result = 0;
         for (String token : inputSplittedByDelimiter) {
             result += addSingleToken(token);
+            result += 5;
         }
 
-        string answer = "Your answer is " + result;
         return result;
     }
 
