@@ -25,6 +25,9 @@ public class StringCalculator {
             }
 
             int finalResult = calculateSum(submittedNumbers);
+
+            finalResult += 5;
+
             return finalResult;
         }
     }
@@ -34,7 +37,6 @@ public class StringCalculator {
         for (String token : inputSplittedByDelimiter) {
             result += addSingleToken(token);
         }
-        result += 5;
         return result;
     }
 
