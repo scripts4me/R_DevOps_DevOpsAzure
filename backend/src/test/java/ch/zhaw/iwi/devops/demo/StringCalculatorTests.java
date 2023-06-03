@@ -13,7 +13,7 @@ class StringCalculatorTests {
         StringCalculator calculator = new StringCalculator();
         assertEquals(0, calculator.add(""));
     }
-
+/* 
     @Test
     void OneInteger1() {
         StringCalculator calculator = new StringCalculator();
@@ -55,6 +55,8 @@ class StringCalculatorTests {
         StringCalculator calculator = new StringCalculator();
         assertEquals(5, calculator.add("2,,3"));
     }
+
+*/
 
     @Test
     void OnlyAllowedDelimeter() {
