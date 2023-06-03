@@ -1,4 +1,4 @@
-package ch.zhaw.iwi.devops.StringCalculator;
+package ch.zhaw.iwi.devops.demo;
 
 // StringCalculator.java aus https://github.com/scripts4me/R_DevOps_TDD
 

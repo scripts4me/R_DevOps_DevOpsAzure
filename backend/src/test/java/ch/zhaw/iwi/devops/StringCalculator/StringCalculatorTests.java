@@ -2,6 +2,9 @@ package ch.zhaw.iwi.devops.StringCalculator;
 
 // StringCalculatorTests.java aus https://github.com/scripts4me/R_DevOps_TDD
 import org.junit.jupiter.api.Test;
+
+import ch.zhaw.iwi.devops.demo.StringCalculator;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class StringCalculatorTests {

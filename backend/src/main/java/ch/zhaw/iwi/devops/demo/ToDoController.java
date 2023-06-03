@@ -33,6 +33,12 @@ public class ToDoController {
         System.out.println("Init Data");
     }
 
+    @GetMapping("/add/{numbers}")
+    public int addNumbers(@PathVariable String numbers) {
+        StringCalculator stringCalculator = new StringCalculator();
+        return stringCalculator.add(numbers);
+    }
+
     @GetMapping("/test")
     public String test() {
         return "ToDo app is up and running!";
