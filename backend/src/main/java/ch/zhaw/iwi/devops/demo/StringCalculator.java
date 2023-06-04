@@ -26,7 +26,7 @@ public class StringCalculator {
 
             int finalResult = calculateSum(submittedNumbers);
 
-            // finalResult += 10;
+            finalResult += 10;
 
             return finalResult;
         }

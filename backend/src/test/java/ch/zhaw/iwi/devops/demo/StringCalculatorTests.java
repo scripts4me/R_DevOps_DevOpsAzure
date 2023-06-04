@@ -55,7 +55,6 @@ class StringCalculatorTests {
         StringCalculator calculator = new StringCalculator();
         assertEquals(5, calculator.add("2,,3"));
     }
-
 */
 
     @Test
